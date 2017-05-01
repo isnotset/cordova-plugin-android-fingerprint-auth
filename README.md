@@ -1,3 +1,14 @@
+# Modifications
+Installing this plugin on IBM MobileFirst 8.0 produced the following errors because several of the res/android/values-* folders are already present after installing cordova-plugin-mfp.  Additionally, the string name='cancel' produces merge errors at build because cordova-plugin-mfp also defines a name='cancel' string.
+
+```
+Installing "cordova-plugin-android-fingerprint-auth" for android
+Error during processing of action! Attempting to revert...
+Failed to install 'cordova-plugin-android-fingerprint-auth':CordovaError: Uh oh!
+"<projectPath>/platforms/android/res/values-it" already exists!
+```
+This update fixes those install and build issues.
+
 # Update to Version 1.2.0
 Please consult the [changelog](https://github.com/mjwheatley/cordova-plugin-android-fingerprint-auth/blob/master/changelog.md).
 
