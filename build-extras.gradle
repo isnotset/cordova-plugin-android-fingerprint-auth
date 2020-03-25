@@ -8,6 +8,7 @@ android {
 }
 
 dependencies {
+    implementation "androidx.core:core-ktx:+"
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:support-v4:25.0.0'
 }
